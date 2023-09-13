@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, scale=1.0">
+	<style type="text/css">
+		*{box-sizing: border-box; margin:0; padding: 0}
+
+	@media screen and (max-width: 446px )
+	{	/*html,body {overflow-x: hidden;}*/
+
+		body{width: 445px; align-items: center; display: flex; flex-direction: column; justify-content:space-around;  }
+
+		nav { transform: translateX(150px); display:block; width:150%; margin: 30px 5px 10px 5px  }
+		nav a img {width: 30%; margin-top: 20px}	
+		nav a sup{ font-size: 35px;  }
+
+		.grid_container1 {display:flex; flex-wrap:wrap; width:810px; font-size:1.35em; margin:auto;  line-height:50px; justify-content: center; }
+		.grid_container1 #long_bar p {font-size:28px;line-height:35px; padding:10px 10px 10px 10px;}
+
+		.grid_container2 {display:flex; flex-wrap:wrap; width:446px; justify-content: center;}
+		.grid_container2 .grid_item2 { width: 260%;  }
+		.grid_container2 .grid_item2 img { display: none; }
+		.grid_container2 #analytics{ font-size:80px; font-height:48;  width:170%; text-align:left; transform: translateX(-126px); }
+		.grid_container2 .grid_item2  p#analytics_text { display:flex; justify-content: center; font-size: 36px; padding: 10px 0px 10px 40px; line-height: 50px; width: 140%;}
+		
+		#arrow_down{display: none;}
+
+		div p#academy { width: 185%; margin-top: 20px; font-size:40px; }
+
+		.grid_container3 {background-color:#4285F4; display:grid; grid-template-columns:100%; grid-template-rows:500px; position:relative; top:200; left:175px}
+		.grid_container3 .grid_item3{width:670px; padding:0px 0px 0px 0px; margin:0px 0px 0px 0px;}
+		.grid_container3 .grid_item3 p.heading { margin-top:0px; font-size:40px;}
+		.grid_container3 .grid_item3 p.text {margin-top:40px;font-size:27px; line-height:40px;}
+		.grid_container3 .grid_item3 a img#logo{width:100px; height:110px; /*max-width: 100%*/}
+		/*.grid_container3 .grid_item3 a img.arrow {margin-top: 90px}
+		.grid_container3 div.grid_item3 a img#arrow { margin-top: 90px; }} */ 
+
+		.grid_container3b {background-color:#4285FA; display:grid; grid-template-columns:100%; 					position:relative; top:500px; left:-135px; grid-template-rows:500px;}
+		.grid_container3b .grid_item3b { background-color: #ffffff; width: 670px; }
+		.grid_container3b .grid_item3b p.heading { margin-top:30px; font-size:40px;}
+		.grid_container3b .grid_item3b p.text {margin-top:40px;font-size:27px; line-height:40px;}
+		.grid_container3b .grid_item3b a img#logo{width:100px; height:110px ;}
+		 
+		.grid_container3c {background-color:#4285FA; display:grid; grid-template-columns:100%; 					position:relative; top:1000px; left:-442px; grid-template-rows:500px;}
+		.grid_container3c .grid_item3c { background-color: #ffffff; width: 683px; }
+		.grid_container3c .grid_item3c p.heading { margin-top:30px; font-size:40px;}
+		.grid_container3c .grid_item3c p.text {margin-top:40px;font-size:27px; line-height:40px;}
+		.grid_container3c .grid_item3c a img#logo{width:100px; height:110px ;}
+
+
+		.grid_container3d {background-color:#4285FA; display:grid; grid-template-columns:100%; 					position:relative; top:1500px; left:-753px; grid-template-rows:200px;}
+		.grid_container3d .grid_item3d { background-color: #ffffff; width: 666px; }
+		.grid_container3d .grid_item3d p.heading { margin-top:30px; font-size:40px;}
+		.grid_container3d .grid_item3d p.text {margin-top:40px;font-size:27px; line-height:40px;}
+		.grid_container3d .grid_item3d a img#logo{width:100px; height:110px ;}
+
+		.grid_container3e {background-color:#4285FA; display:grid; grid-template-columns:100%; 				 grid-template-rows:200px; position:relative; bottom:-1500px; left:172px;}
+		.grid_container3e .grid_item3e { background-color: #ffffff; width: 683px; }
+		.grid_container3e .grid_item3e p.heading {margin-top:30px; font-size:40px;}
+		.grid_container3e .grid_item3e p.text {margin-top:40px;font-size:27px; line-height:40px;}
+		.grid_container3e .grid_item3e a img#logo{width:100px; height:110px ;}
+
+
+		.grid_container3f {background-color:#4285FA; display:grid; grid-template-columns:100%; 				 grid-template-rows:200px; position:relative; bottom:-2020px; left:-130px;}
+		.grid_container3f .grid_item3f { background-color: #ffffff; width: 680px; }
+		.grid_container3f .grid_item3f p.heading {margin-top:30px; font-size:40px;}
+		.grid_container3f .grid_item3f p.text {margin-top:40px;font-size:27px; line-height:40px;}
+		.grid_container3f .grid_item3f a img#logo{width:100px; height:110px ;}
+
+		.instructors{ padding:50px 10px 30px 0px;   transform:translateY(2000px); width:100%; }
+		.instructors p#instructors{font-weight:400; font-size:60px; line-height:30px; width:800px;}
+		.instructor_name {font-size:50px; font-height:20px; font-weight:400; color:rgba(0, 0, 0, 0.87); padding:20px 25px 20px 25px; width: 600%;}
+		.text_styling{padding: 20px 25px 30px 25px; width: 600%;}
+
+		.grid_container4
+		{ display:grid; grid-template-columns:90%; grid-template-rows:600px; position:relative; bottom:-2000px; right:-200px; width:800px; height:px } 
+		.grid_container4 div.text p.instructor_name{ margin-top:40px; font-size:50px; font-weight:400; line-height:24px; }
+		.gric_container4 .text {padding: 5px 5px 20px 10px; color:rgba(0, 0, 0, 0.87);   }
+		.grid_container4 div.grid_item4 {display: none;}
+		.grid_container4 div.text p.text_styling { font-size:40px; line-height: 40px; text-align:justify; background-color: #F2F2F2; }
+
+		.grid_container5
+		{ display:grid; grid-template-columns:90%; grid-template-rows:600px; position:relative; bottom:-2460px; right:-200px; width:800px; height:px } 
+		.grid_container5 div.text p.instructor_name{ margin-top:40px; font-size:50px; font-weight:400; line-height:24px; }
+		.gric_container5 .text {  padding: 5px 5px 20px 10px; color:rgba(0, 0, 0, 0.87);   }
+		.grid_container5 div.grid_item5 {display: none;}
+		.grid_container5 div.text p.text_styling { font-size:40px; line-height: 40px; text-align:justify; background-color: #F2F2F2; }
+
+		.grid_container6
+		{ display:grid; grid-template-columns:90%; grid-template-rows:600px; position:relative; bottom:-2770px; right:-200px; width:800px; height:px } 
+		.grid_container6 div.text p.instructor_name{ margin-top:40px; font-size:50px; font-weight:400; line-height:24px; }
+		.gric_container6 .text {  padding: 5px 5px 20px 10px; color:rgba(0, 0, 0, 0.87);   }
+		.grid_container6 div.grid_item6 {display: none;}
+		.grid_container6 div.text p.text_styling { font-size:40px; line-height: 40px; text-align:justify; background-color: #F2F2F2; }
+		
+		.grid_container7 
+		{ position:relative; bottom:-3200px; right:-220px; width:1000px; /*transform:translateY(-2100px)*/ display:none; grid-template-columns:100%; grid-template-rows:300px ; background-color:#FAFAFA; justify-content:center;}
+
+		.grid_item7 { display: none; width:90%; background-color:#F2F2F2; margin:70px 10px 20px 10px; align-items: center; text-align: center; padding: 20px 10px 10px 10px }
+		
+		.grid_container7 .grid_item7:nth-child(1)
+		{ grid-column:1/5; height: 200px; background-color: #FAFAFA; margin: 0px 0px 60px 0px ;
+			text-align: left; letter-spacing: 0.05px; padding-left: 5px; padding-right: 5px}
+		.grid_item7 a { text-decoration: none; color: black; }
+		.grid_container7 div.grid_item7 p#mini_courses {font-size:40px; line-height:30px font-weight:400; padding:20px 0px 20px 0px } 
+		.grid_container7 div.grid_item7 p#mini_courses_text {font-size:30px; line-height:24px; font-weight:400; line-height: 35px;}
+
+		.grid_container8
+		{ position:relative; bottom:-3600px; right:-220px; width:1000px; /*transform:translateY(-2100px);*/ display:none ; grid-template-columns:20% 20% 20% 20% 20%; grid-template-rows:100px 100px 100px 100px; background-color:#F2F2F2; justify-content: center;  }
+
+		.grid_item8 { background-color:#F2F2F2; align-items:center; text-align:center; font-family:Roboto, sans-serif; margin: 0px 0px 0px 0px; display: none;  }
+		.grid_container8 .grid_item8:nth-child(1)
+		{ grid-column:1/6; height: 100px; background-color: #F2F2F2; margin: 0px 0px 60px 0px ;
+			text-align: left; letter-spacing: 0.05px; padding-left: 5px; padding-right: 5px}
+		.grid_item8 a { text-decoration:none; color:black; }
+
+		body{height:auto;}
+	}
+
+
+
+
+		nav
+		{display:grid; justify-content:space-between; background-color:#FAFAFA; align-items:center;justify-content:; padding: 10px 10px 10px 10px;}
+
+		nav a{ text-decoration: none; color:#4A4A4A; font-size: 29px; line-height: 25px; align-items: center; font-family:Roboto, sans-serif;  }
+		nav img{width: 26%;}
+
+		.grid_container1 #long_bar{ background-color:#FF7700; font-family:Roboto, sans-serif; 								font-size:1em; line-height: 20px; color: #ffffff; 
+									font-weight: 700; padding: 10px 3px 10px 5px  }
+
+		.grid_container2{display: grid; font-family:Roboto, sans-serif;	grid-template-columns:50% 50%; grid-template-rows: 99% 50%; height: 350px;
+					}
+		.grid_container2 #analytics{  font-size:44px; font-height:48; color: rgba(0, 0, 0, 0.87); 
+										font-weight: 500; padding:50px 10px 30px 130px; }
+		.grid_container2 #analytics_text{  font-size:20px; line-height: 30px; padding:10px 30px 30px 130px; color: rgba(0, 0, 0, 0.87); font-weight: 400 }
+		.grid_container2 .grid_item2 img { width: 100%; height: 101%; object-fit: cover }
+
+
+
+
+		.grid_container3 {background-color:#4285F4; font-family:Roboto, sans-serif; display:grid;
+							padding: 20px 70px 20px 70px; grid-template-columns:24%;
+							grid-template-rows:500px; padding-left:90px; }
+							/****************/
+		.grid_container3 .grid_item3 { background-color: #ffffff; color: black; margin: 20px 10px 20px 10px; }
+		.grid_container3 .grid_item3 .heading {font-size:23px; line-height:35px; font-weight:700;
+										padding: 5px 5px 5px 15px; }
+		.grid_container3 .grid_item3 .text {font-size:16px; line-height: 27px; font-weight:400; padding: 25px 5px 0px 15px; letter-spacing: 0.7px; }
+		.grid_container3 a {text-decoration: none; color: black }
+		.grid_item3 img{ width:24%; height:14%; padding: 10px 10px 10px 10px;  }
+		.grid_container3 .grid_item3 img.arrow { margin: 50px 5px 5px 190px; }
+		
+
+		.grid_container3b {background-color:; font-family:Roboto, sans-serif; display:grid;
+							padding: 20px 70px 20px 70px; grid-template-columns:24%;
+				grid-template-rows:500px; transform:translate(320px,-540px); }
+		.grid_container3b .grid_item3b { background-color: #ffffff; color: black; margin: 20px 10px 20px 10px; }
+		.grid_container3b .grid_item3b .heading {font-size:23px; line-height:35px; font-weight:700;
+										padding: 5px 5px 5px 15px; }
+		.grid_container3b .grid_item3b .text {font-size:16px; line-height: 27px; font-weight:400; padding: 25px 5px 0px 15px; letter-spacing: 0.7px; }
+		.grid_container3b .grid_item3b a {text-decoration: none; color: black }
+		.grid_container3b .grid_item3b img{ width:24%; height:14%; padding: 10px 10px 10px 10px;  }
+		.grid_container3b .grid_item3b img.arrow { margin: 50px 5px 5px 190px; }
+
+		.grid_container3c {background-color:; font-family:Roboto, sans-serif; display:grid;
+							padding: 20px 70px 20px 70px; grid-template-columns:24%;
+				grid-template-rows:460px; transform:translate(630px,-1060px); }
+		.grid_container3c .grid_item3c{background-color: #ffffff; color: black;}
+		.grid_container3c .grid_item3c .heading {font-size:23px; line-height:35px; font-weight:700;
+										padding: 5px 5px 5px 15px; }
+		.grid_container3c .grid_item3c .text { font-size:16px; line-height: 27px; font-weight:400; padding: 25px 5px 0px 15px; letter-spacing: 0.7px; }
+		.grid_container3c .grid_item3c a {text-decoration: none; color: black }
+		.grid_container3c .grid_item3c img{ width:24%; height:14%; padding: 10px 10px 10px 10px;  }
+		.grid_container3c .grid_item3c img.arrow { margin: 50px 5px 5px 190px; }
+			
+		.grid_container3d {background-color:; font-family:Roboto, sans-serif; display:grid;
+							padding:20px 70px 20px 70px; grid-template-columns:24%;
+				grid-template-rows:500px; transform:translate(940px,-1580px); }
+		.grid_container3d .grid_item3d { background-color:#ffffff; color: black; margin: 20px 10px 20px 10px; }
+		.grid_container3d .grid_item3d .heading {font-size:23px; line-height:35px; font-weight:700;
+										padding: 5px 5px 5px 15px; }
+		.grid_container3d .grid_item3d .text {font-size:16px; line-height: 27px; font-weight:400; padding: 25px 5px 0px 15px; letter-spacing: 0.7px; }
+		.grid_container3d .grid_item3d a {text-decoration: none; color: black }
+		.grid_container3d .grid_item3d img{ width:24%; height:14%; padding: 10px 10px 10px 10px;  }
+		.grid_container3d .grid_item3d img.arrow { margin: 50px 5px 5px 190px; }
+		
+		.grid_container3e {background-color:#4285F4; font-family:Roboto, sans-serif; display:grid;
+							padding:20px 70px 20px 70px; grid-template-columns:24%;
+				grid-template-rows:500px; transform:translate(0px,-1600px); }
+		.grid_container3e .grid_item3e { background-color: #ffffff; color: black; margin: 20px 10px 20px 22px; }
+		.grid_container3e .grid_item3e .heading {font-size:23px; line-height:35px; font-weight:700;
+										padding: 5px 5px 5px 15px; }
+		.grid_container3e .grid_item3e .text {font-size:16px; line-height: 27px; font-weight:400; padding: 25px 5px 0px 15px; letter-spacing: 0.7px; }
+		.grid_container3e .grid_item3e a {text-decoration: none; color: black }
+		.grid_container3e .grid_item3e img{ width:24%; height:14%; padding: 10px 10px 10px 10px;  }
+		.grid_container3e .grid_item3e img.arrow { margin: 50px 5px 5px 190px; }
+
+		.grid_container3f { font-family:Roboto, sans-serif; display:grid;
+							padding:20px 70px 20px 70px; grid-template-columns:24%;
+				grid-template-rows:500px; transform:translate(310px,-2140px); }
+		.grid_container3f .grid_item3f { background-color: #ffffff; color: black; margin: 20px 10px 20px 10px; }
+		.grid_container3f .grid_item3f .heading {font-size:23px; line-height:35px; font-weight:700;
+										padding: 5px 5px 5px 15px; }
+		.grid_container3f .grid_item3f .text {font-size:16px; line-height: 27px; font-weight:400; padding: 25px 5px 0px 15px; letter-spacing: 0.7px; }
+		.grid_container3f .grid_item3f a {text-decoration: none; color: black }
+		.grid_container3f .grid_item3f img{ width:24%; height:14%; padding: 10px 10px 10px 10px;  }
+		.grid_container3f .grid_item3f img.arrow { margin: 50px 5px 5px 190px; }
+			/****************/
+		.instructors{ background-color: #FAFAFA; color: rgba(0, 0, 0, 0.87) ; font-family:Roboto, sans-serif; font-weight:400; font-size:30px; line-height:30px; padding:50px 10px 30px 100px;  position:relative; top:-2100px; /*transform: translateY(-1900);*/ }
+
+		#academy {color:#ffffff; font-size:30px; font-height:30px; font-weight:300; font-family: Roboto, sans-serif; background-color:#4285F4; padding: 50px 20px 10px 90px }
+
+		.instructor_name {font-size:20px; font-height:20px; font-weight:400; color:rgba(0, 0, 0, 0.87); padding:20px 25px 20px 25px;}
+		.text_styling{padding: 20px 25px 30px 25px}
+
+		.grid_container4
+		{ display:grid; grid-template-columns:16.5% 83%; grid-template-rows:200px; margin:10px 100px 30px 100px; background-color: #F2F2F2; font-family:Roboto,sans-serif; font-weight:400; font-size:16px; line-height: 24px;letter-spacing: 0.5px; transform:translateY(-2100px); } 
+		.grid_container4 .grid_item4 { padding: 0px 20px 20px 0px  }
+		.gric_container4 .text {  padding: 5px 5px 20px 10px; color:rgba(0, 0, 0, 0.87)  }
+
+		
+
+		.grid_container5
+		{ display:grid; grid-template-columns:16.5% 83%; grid-template-rows:200px; margin:10px 100px 30px 100px; background-color: #F2F2F2; font-family:Roboto,sans-serif; font-weight:400; font-size:16px; line-height: 24px;letter-spacing: 0.5px; transform:translateY(-2100px); } 
+		.grid_container5 .grid_item5 { padding: 0px 20px 20px 0px  }
+		.gric_container5 .text {  padding: 5px 5px 20px 10px; color:rgba(0, 0, 0, 0.87)  }
+
+		.grid_container6
+		{ display:grid; grid-template-columns:16.5% 83%; grid-template-rows:230px; margin:10px 100px 30px 100px; background-color: #F2F2F2; font-family:Roboto,sans-serif; font-weight:400; font-size:16px; line-height: 24px;letter-spacing: 0.5px; transform:translateY(-2100px); } 
+		.grid_container6 .grid_item6 { padding: 0px 20px 20px 0px  }
+		.gric_container6 .text {  padding: 5px 5px 20px 10px; color:rgba(0, 0, 0, 0.87 ) }
+
+		.grid_container7 
+		{transform:translateY(-2100px); display:grid; grid-template-columns:20% 20% 20% 20%; grid-template-rows:100px 250px; background-color:#FAFAFA; justify-content:center; font-family:Roboto, sans-serif;}
+
+		.grid_item7 {background-color:#F2F2F2; margin:70px 10px 20px 10px; align-items: center; text-align: center; padding: 20px 10px 10px 10px }
+		
+		.grid_container7 .grid_item7:nth-child(1)
+		{ grid-column:1/5; height: 100px; background-color: #FAFAFA; margin: 0px 0px 60px 0px ;
+			text-align: left; letter-spacing: 0.05px; padding-left: 5px; padding-right: 5px}
+		.grid_item7 a { text-decoration: none; color: black; }
+		.grid_container7 div.grid_item7 p.mini_courses {font-size:30px; line-height:30px font-weight:400; padding:20px 0px 20px 0px }
+		.grid_container7 div.grid_item7 p.mini_courses_text {font-size:16px; line-height:24px; font-weight:400;}
+
+		.grid_container8
+		{ transform:translateY(-2100px); display:grid; grid-template-columns:20% 20% 20% 20% 20%; grid-template-rows:100px 100px 100px 100px; background-color:#F2F2F2; justify-content: center; }
+
+		.grid_item8 { background-color:#F2F2F2; align-items:center; text-align:center; font-family:Roboto, sans-serif; margin: 0px 0px 0px 0px;  }
+		.grid_container8 .grid_item8:nth-child(1)
+		{ grid-column:1/6; height: 100px; background-color: #F2F2F2; margin: 0px 0px 60px 0px ;
+			text-align: left; letter-spacing: 0.05px; padding-left: 5px; padding-right: 5px}
+		.grid_item8 a { text-decoration:none; color:black; }
+
+		#arrow_down img{transform:translate(84vh,-12vh); border-radius:100%; height:28%; width:8%;}
+
+		body{background-color: #FAFAFA; height:auto;}
+		html{ scroll-behavior: smooth; }
+
+	</style>
+</head>
+<body>
+	<nav>
+		 <a href=""> <img src="C:\Users\user\Documents\HTML\images\googlelogo_clr_148x48px.svg"> 
+		 	<sup> Analytics Academy </sup> </a>
+	</nav>
+
+	<section class="grid_container1"> 
+		<div id="long_bar"> 
+			<P> These courses are about Universal Analytics, which will stop processing data on July 1, 2023. Learn about Google Analytics 4, our next-generation measurement solution, with <a href="" style="color: white"> these free courses on Skillshop. </a> </P> 
+		</div>
+	</section>
+
+	<section class="grid_container2"> 
+		<div class="grid_item2">  
+			<p id="analytics" > Learn analytics with free online courses </p>
+			<p id="analytics_text">	Analytics Academy helps you learn about Google's measurement 
+									tools so that you can grow your business through intelligent data collection and analysis.
+			</p>
+
+		</div>
+
+		<div class="grid_item2"> 
+			<img src="C:\Users\user\Documents\HTML\images\hero_academy.JPG">
+		
+		</div>
+
+		<a id="arrow_down" href="#grid_item3">	
+			<img src="C:\Users\user\Documents\HTML\images\down arrow.PNG">
+		</a>
+
+	</section> 
+
+	<div style="margin: 0px 0px 0px 0px"> <p id="academy"> Analytics Academy Courses </p> </div>
+
+	<section class="grid_container3"> 
+		<div class="grid_item3" id="grid_item3"> 
+		<a href=""> <img id="logo" src="C:\Users\user\Documents\HTML\images\logo_google_analytics.PNG"> 
+			<p class="heading">Google Analytics for Beginners</p> </a>
+			<p class="text">Learn the basic features of Google Analytics including how to create an account, implement tracking code, analyze basic reports, and set up goals and campaign tracking.</p> 
+
+	 <a href=""><img id="arrow" src="C:\Users\user\Documents\HTML\images\right_arrow.PNG"> </a>
+		</div> 
+	</section>
+
+	<section class="grid_container3b">
+		<div class="grid_item3b"> 
+		<a href="">	<img src="C:\Users\user\Documents\HTML\images\logo_google_analytics.PNG"> 
+			<p class="heading">Advanced Google Analytics</p> </a>
+			<p class="text">Learn about advanced Google Analytics features including data collection, processing and configuration, and more complex analysis and marketing tools.</p>
+
+	<a href=""> <img style="margin-top: 80px;" class="arrow" src="C:\Users\user\Documents\HTML\images\right_arrow.PNG"></a>
+		</div>
+	</section>
+
+	<section class="grid_container3c">
+		<div class="grid_item3c"> 
+		<a href="">	<img src="C:\Users\user\Documents\HTML\images\logo_google_analytics.PNG">
+			<p class="heading">Google Analytics for Power Users</p> </a>
+			<p class="text">After you're familiar with the range of features Analytics offers, learn and practice actionable analyses to track business performance and identify areas for business improvement.</p>
+	<a href=""> <img class="arrow" src="C:\Users\user\Documents\HTML\images\right_arrow.PNG"></a>
+		</div>
+	</section>
+
+	<section class="grid_container3d">
+		<div class="grid_item3d"> 
+		<a href="">	<img src="C:\Users\user\Documents\HTML\images\logo_google_analytics.PNG">
+			<p class="heading">Getting Started With Google Analytics 360</p> </a>
+			<p class="text">Learn about powerful Google Analytics 360 features that are not available in the standard product, and gain insight into how you can benefit from integrations with BigQuery, Google Marketing Platform products, and Google Ad Manager.
+			</p>
+	<a href=""> <img style="margin-top: 3px;" class="arrow" src="C:\Users\user\Documents\HTML\images\right_arrow.PNG"></a>
+		</div>
+	</section>
+
+	<section class="grid_container3e">
+		<div class="grid_item3e"> 
+		<a href="">	<img src="C:\Users\user\Documents\HTML\images\logo_gmp_data_studio_192px.PNG">
+			<p class="heading">Introduction to Data Studio</p> </a>
+			<p class="text">Introduction to Data Studio helps you learn and practice beginner steps in connecting your data and building Data Studio reports.</p>
+	<a href=""> <img style="margin-top: 90px" class="arrow" src="C:\Users\user\Documents\HTML\images\right_arrow.PNG"></a>
+		</div>
+	</section>
+
+	<section class="grid_container3f">
+		<div class="grid_item3f"> 
+		<a href="">	<img src="C:\Users\user\Documents\HTML\images\logo_gmp_tag_manager_192px.PNG">
+			<p class="heading">Google Tag Manager Fundamentals</p> </a>
+			<p class="text">Discover how Google Tag Manager can simplify the tag implementation and management process for marketers, analysts, and developers.</p>
+
+	<a href=""> <img style="margin-top: 60px" class="arrow" src="C:\Users\user\Documents\HTML\images\right_arrow.PNG"></a>
+		</div>
+	</section> 
+
+	<div class="instructors"> <p id="instructors"> Meet the Instructors </p> </div>
+
+	<section class="grid_container4"> 
+		<div class="grid_item4">
+			<img src="C:\Users\user\Documents\HTML\images\ins_justin_cutroni_1x.JPG">
+		</div>
+
+		<div class="text">  
+		<p class="instructor_name"> JUSTIN CUTRONI </p> <hr> 
+				<p class="text_styling" > <j> Justin's mission is to teach everyone how to use digital analytics for their business. With over ten years of industry experience, Justin now leads the Google Analytics Education team. Justin is an active participant in the digital analytics community. He publishes the blog Analytics Talk and has authored or co-authored three books on Google Analytics. In 2014, he was named the Digital Analytics Industry's Most Influential Contributor by the Digital Analytics Association. </j></p>
+		</div>	
+	</section>
+
+	<section class="grid_container5">
+		<div class="grid_item5">
+			<img src="C:\Users\user\Documents\HTML\images\ins_krista_seiden_1x.JPG">
+		</div>
+
+		<div class="text">
+		<p class="instructor_name"> KRISTA SEIDEN </p> <hr>
+				<p class="text_styling"> Krista is a leader in digital analytics, advocating for best practices, and a frequent speaker at industry events. Krista co-chairs the San Francisco chapter of the Digital Analytics Association (DAA) and mentors for the Analysis Exchange. She won the 2014 DAA Rising Star Award and the 2015 DAA Practitioner of the Year Award.</p>
+		</div>	
+	</section>
+
+	<section class="grid_container6">
+		<div class="grid_item6">
+			<img src="C:\Users\user\Documents\HTML\images\ins_ashish_vij_1x.JPG">
+		</div>
+
+		<div class="text">
+		<p class="instructor_name"> ASHISH VIJ </p> <hr>
+				<p class="text_styling"> Ashish Vij is a Senior Specialist on Google Analytics 360 at Google. With over 12 years of experience, he works alongside Google’s advertising teams to design and implement measurement strategies for Google’s top tier clients. He was also responsible for developing key platform features along with deploying commercialization efforts for Google Analytics. Ashish is a measurement evangelist, and speaks to companies around the importance of implementing measurement as a focus for advertising.</p>
+		</div>	
+	</section>
+
+	<section class="grid_container7"> 
+		<div class="grid_item7">      
+			<p class="mini_courses" id="mini_courses"> Analytics Mini-Courses on YouTube</p>  
+			<p class="mini_courses_text" id="mini_courses_text">For an overview of other Google Marketing Platform Analytics products, check out the Analytics Mini-Courses on YouTube. There you can learn how to create your account; set up your first report, tag, or test; and use Google Analytics for Firebase, Google Tag Manager, Google Optimize, and more.</p> <br> <br>
+		</div>
+
+		<div class="grid_item7"> <a href="">
+			<img style="height: 35%; width: 20%;" src="C:\Users\user\Documents\HTML\images\logo_google_analytics_for_firebase_1-icon_light.PNG"> <br>	Getting Started with Google Analytics for Firebase </a>
+		</div>
+	
+		<div class="grid_item7"> <a href="">
+			<img style="height: 35%; width: 20%;" src="C:\Users\user\Documents\HTML\images\logo_gmp_tag_manager_192px.PNG"> <br>	Getting Started with Google Tag Manager </a>
+		</div>
+
+		<div class="grid_item7"> <a href="">
+			<img style="height: 35%; width: 20%;" src="C:\Users\user\Documents\HTML\images\logo_gmp_optimize_tile_192px.PNG"> <br>	Getting Started with Google Optimize </a>
+		</div>
+
+		<div class="grid_item7"> <a href="">
+			<img style="height: 35%; width: 20%;" src="C:\Users\user\Documents\HTML\images\logo_google_analytics.PNG"> <br>	More Google Analytics Playlist  </a>
+		</div>
+	</section>
+
+	<section class="grid_container8">
+		<div class="grid_item8">
+			<p style="font-size:20px; font-height:20px; font-weight:400; color:rgba(0, 0, 0, 0.87); padding:20px 0px 20px 120px; "> ADDITIONAL RESOURCES </p> <hr>
+		</div>
+
+		<div class="grid_item8"> <a href="">
+			<img style="height: %; width:%;" src="C:\Users\user\Documents\HTML\images\logo_analytics_color_1x_web_48dp.PNG"> <br>	Google Analytics <br> Demo Account  </a>
+		</div>
+
+		<div class="grid_item8"> <a href="">
+			<img style="height: %; width:%;" src="C:\Users\user\Documents\HTML\images\logo_analytics_color_1x_web_48dp.PNG"> <br>	Google Analytics <br> Youtube Channel  </a>
+		</div>
+	
+		<div class="grid_item8"> <a href="">
+			<img style="height: %; width: %;" src="C:\Users\user\Documents\HTML\images\logo_googleg_standard_color_48dp_1x.PNG"> <br>	Google Analytics <br> Youtube Channel </a>
+		</div>
+
+		<div class="grid_item8"> <a href="">
+			<img style="height: %; width: %;" src="C:\Users\user\Documents\HTML\images\logo_youtube_color_1x_web_48dp.PNG"> <br>	 Google Analytics <br> Blog </a>
+		</div>
+
+		<div class="grid_item8"> <a href="">
+			<img style="height: %; width:%;" src="C:\Users\user\Documents\HTML\images\logo_google_developers_color_1x_web_48dp.PNG"> <br>	 Google Analytics <br> Google Developer  </a>
+		</div>
+
+	</section>
+</body>
+</html>
