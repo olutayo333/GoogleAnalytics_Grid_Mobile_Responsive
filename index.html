@@ -10,7 +10,7 @@
 	@media screen and (max-width: 446px )
 	{	/*html,body {overflow-x: hidden;}*/
 
-		body{width: 445px; align-items: center; display: flex; flex-direction: column; justify-content:space-around;  }
+		body{width: 445px; align-items: center; display: flex; flex-direction: column; justify-content:space-around;}
 
 		nav { transform: translateX(150px); display:block; width:150%; margin: 30px 5px 10px 5px  }
 		nav a img {width: 30%; margin-top: 20px}	
@@ -22,7 +22,7 @@
 		.grid_container2 {display:flex; flex-wrap:wrap; width:446px; justify-content: center;}
 		.grid_container2 .grid_item2 { width: 260%;  }
 		.grid_container2 .grid_item2 img { display: none; }
-		.grid_container2 #analytics{ font-size:80px; font-height:48;  width:170%; text-align:left; transform: translateX(-126px); }
+		.grid_container2 #analytics{ font-size:80px; line-height:48;  width:170%; text-align:left; transform: translateX(-126px); }
 		.grid_container2 .grid_item2  p#analytics_text { display:flex; justify-content: center; font-size: 36px; padding: 10px 0px 10px 40px; line-height: 50px; width: 140%;}
 		
 		#arrow_down{display: none;}
@@ -71,7 +71,7 @@
 
 		.instructors{ padding:50px 10px 30px 0px;   transform:translateY(2000px); width:100%; }
 		.instructors p#instructors{font-weight:400; font-size:60px; line-height:30px; width:800px;}
-		.instructor_name {font-size:50px; font-height:20px; font-weight:400; color:rgba(0, 0, 0, 0.87); padding:20px 25px 20px 25px; width: 600%;}
+		.instructor_name {font-size:50px; font-weight:400; color:rgba(0, 0, 0, 0.87); padding:20px 25px 20px 25px; width: 600%;}
 		.text_styling{padding: 20px 25px 30px 25px; width: 600%;}
 
 		.grid_container4
@@ -104,7 +104,7 @@
 		{ grid-column:1/5; height: 200px; background-color: #FAFAFA; margin: 0px 0px 60px 0px ;
 			text-align: left; letter-spacing: 0.05px; padding-left: 5px; padding-right: 5px}
 		.grid_item7 a { text-decoration: none; color: black; }
-		.grid_container7 div.grid_item7 p#mini_courses {font-size:40px; line-height:30px font-weight:400; padding:20px 0px 20px 0px } 
+		.grid_container7 div.grid_item7 p#mini_courses {font-size:40px; line-height:30px; font-weight:400; padding:20px 0px 20px 0px } 
 		.grid_container7 div.grid_item7 p#mini_courses_text {font-size:30px; line-height:24px; font-weight:400; line-height: 35px;}
 
 		.grid_container8
@@ -119,23 +119,20 @@
 		body{height:auto;}
 	}
 
-
-
-
 		nav
-		{display:grid; justify-content:space-between; background-color:#FAFAFA; align-items:center;justify-content:; padding: 10px 10px 10px 10px;}
+		{display:grid; justify-content:space-between; background-color:#FAFAFA; align-items:center; padding: 10px 10px 10px 10px;}
 
-		nav a{ text-decoration: none; color:#4A4A4A; font-size: 29px; line-height: 25px; align-items: center; font-family:Roboto, sans-serif;  }
-		nav img{width: 26%;}
+		nav a{ text-decoration:none; color:#4A4A4A; font-size:29px; line-height:25px; align-items:center; font-family:Roboto, sans-serif;  }
+		nav img{width:26%;}
 
-		.grid_container1 #long_bar{ background-color:#FF7700; font-family:Roboto, sans-serif; 								font-size:1em; line-height: 20px; color: #ffffff; 
+		.grid_container1 #long_bar{ background-color:#FF7700; font-family:Roboto, sans-serif;font-size:1em; line-height: 20px; color: #ffffff; 
 									font-weight: 700; padding: 10px 3px 10px 5px  }
 
 		.grid_container2{display: grid; font-family:Roboto, sans-serif;	grid-template-columns:50% 50%; grid-template-rows: 99% 50%; height: 350px;
 					}
-		.grid_container2 #analytics{  font-size:44px; font-height:48; color: rgba(0, 0, 0, 0.87); 
+		.grid_container2 #analytics{  font-size:44px; height:48; color: rgba(0, 0, 0, 0.87); 
 										font-weight: 500; padding:50px 10px 30px 130px; }
-		.grid_container2 #analytics_text{  font-size:20px; line-height: 30px; padding:10px 30px 30px 130px; color: rgba(0, 0, 0, 0.87); font-weight: 400 }
+		.grid_container2 #analytics_text{  font-size:20px; line-height: 30px; padding:10px 30px 30px 130px; color: rgba(0, 0, 0, 0.87); font-weight: 400 ;}
 		.grid_container2 .grid_item2 img { width: 100%; height: 101%; object-fit: cover }
 
 
@@ -154,7 +151,7 @@
 		.grid_container3 .grid_item3 img.arrow { margin: 50px 5px 5px 190px; }
 		
 
-		.grid_container3b {background-color:; font-family:Roboto, sans-serif; display:grid;
+		.grid_container3b { font-family:Roboto, sans-serif; display:grid;
 							padding: 20px 70px 20px 70px; grid-template-columns:24%;
 				grid-template-rows:500px; transform:translate(320px,-540px); }
 		.grid_container3b .grid_item3b { background-color: #ffffff; color: black; margin: 20px 10px 20px 10px; }
@@ -165,7 +162,7 @@
 		.grid_container3b .grid_item3b img{ width:24%; height:14%; padding: 10px 10px 10px 10px;  }
 		.grid_container3b .grid_item3b img.arrow { margin: 50px 5px 5px 190px; }
 
-		.grid_container3c {background-color:; font-family:Roboto, sans-serif; display:grid;
+		.grid_container3c { font-family:Roboto, sans-serif; display:grid;
 							padding: 20px 70px 20px 70px; grid-template-columns:24%;
 				grid-template-rows:460px; transform:translate(630px,-1060px); }
 		.grid_container3c .grid_item3c{background-color: #ffffff; color: black;}
@@ -176,7 +173,7 @@
 		.grid_container3c .grid_item3c img{ width:24%; height:14%; padding: 10px 10px 10px 10px;  }
 		.grid_container3c .grid_item3c img.arrow { margin: 50px 5px 5px 190px; }
 			
-		.grid_container3d {background-color:; font-family:Roboto, sans-serif; display:grid;
+		.grid_container3d {font-family:Roboto, sans-serif; display:grid;
 							padding:20px 70px 20px 70px; grid-template-columns:24%;
 				grid-template-rows:500px; transform:translate(940px,-1580px); }
 		.grid_container3d .grid_item3d { background-color:#ffffff; color: black; margin: 20px 10px 20px 10px; }
@@ -211,17 +208,15 @@
 			/****************/
 		.instructors{ background-color: #FAFAFA; color: rgba(0, 0, 0, 0.87) ; font-family:Roboto, sans-serif; font-weight:400; font-size:30px; line-height:30px; padding:50px 10px 30px 100px;  position:relative; top:-2100px; /*transform: translateY(-1900);*/ }
 
-		#academy {color:#ffffff; font-size:30px; font-height:30px; font-weight:300; font-family: Roboto, sans-serif; background-color:#4285F4; padding: 50px 20px 10px 90px }
+		#academy {color:#ffffff; font-size:30px;  font-weight:300; font-family: Roboto, sans-serif; background-color:#4285F4; padding: 50px 20px 10px 90px }
 
-		.instructor_name {font-size:20px; font-height:20px; font-weight:400; color:rgba(0, 0, 0, 0.87); padding:20px 25px 20px 25px;}
+		.instructor_name {font-size:20px; font-weight:400; color:rgba(0, 0, 0, 0.87); padding:20px 25px 20px 25px;}
 		.text_styling{padding: 20px 25px 30px 25px}
 
 		.grid_container4
 		{ display:grid; grid-template-columns:16.5% 83%; grid-template-rows:200px; margin:10px 100px 30px 100px; background-color: #F2F2F2; font-family:Roboto,sans-serif; font-weight:400; font-size:16px; line-height: 24px;letter-spacing: 0.5px; transform:translateY(-2100px); } 
 		.grid_container4 .grid_item4 { padding: 0px 20px 20px 0px  }
 		.gric_container4 .text {  padding: 5px 5px 20px 10px; color:rgba(0, 0, 0, 0.87)  }
-
-		
 
 		.grid_container5
 		{ display:grid; grid-template-columns:16.5% 83%; grid-template-rows:200px; margin:10px 100px 30px 100px; background-color: #F2F2F2; font-family:Roboto,sans-serif; font-weight:400; font-size:16px; line-height: 24px;letter-spacing: 0.5px; transform:translateY(-2100px); } 
@@ -242,7 +237,7 @@
 		{ grid-column:1/5; height: 100px; background-color: #FAFAFA; margin: 0px 0px 60px 0px ;
 			text-align: left; letter-spacing: 0.05px; padding-left: 5px; padding-right: 5px}
 		.grid_item7 a { text-decoration: none; color: black; }
-		.grid_container7 div.grid_item7 p.mini_courses {font-size:30px; line-height:30px font-weight:400; padding:20px 0px 20px 0px }
+		.grid_container7 div.grid_item7 p.mini_courses {font-size:30px; line-height:30px; font-weight:400; padding:20px 0px 20px 0px }
 		.grid_container7 div.grid_item7 p.mini_courses_text {font-size:16px; line-height:24px; font-weight:400;}
 
 		.grid_container8
@@ -263,7 +258,7 @@
 </head>
 <body>
 	<nav>
-		 <a href=""> <img src="C:\Users\user\Documents\HTML\images\googlelogo_clr_148x48px.svg"> 
+		 <a href=""> <img src="img\googlelogo_clr_148x48px.svg"> 
 		 	<sup> Analytics Academy </sup> </a>
 	</nav>
 
@@ -283,12 +278,12 @@
 		</div>
 
 		<div class="grid_item2"> 
-			<img src="C:\Users\user\Documents\HTML\images\hero_academy.JPG">
+			<img src="img\hero_academy.JPG">
 		
 		</div>
 
 		<a id="arrow_down" href="#grid_item3">	
-			<img src="C:\Users\user\Documents\HTML\images\down arrow.PNG">
+			<img src="img\down arrow.PNG">
 		</a>
 
 	</section> 
@@ -297,59 +292,59 @@
 
 	<section class="grid_container3"> 
 		<div class="grid_item3" id="grid_item3"> 
-		<a href=""> <img id="logo" src="C:\Users\user\Documents\HTML\images\logo_google_analytics.PNG"> 
+		<a href=""> <img id="logo" src="img\logo_google_analytics.PNG"> 
 			<p class="heading">Google Analytics for Beginners</p> </a>
 			<p class="text">Learn the basic features of Google Analytics including how to create an account, implement tracking code, analyze basic reports, and set up goals and campaign tracking.</p> 
 
-	 <a href=""><img id="arrow" src="C:\Users\user\Documents\HTML\images\right_arrow.PNG"> </a>
+	 <a href=""><img id="arrow" src="img\right_arrow.PNG"> </a>
 		</div> 
 	</section>
 
 	<section class="grid_container3b">
 		<div class="grid_item3b"> 
-		<a href="">	<img src="C:\Users\user\Documents\HTML\images\logo_google_analytics.PNG"> 
+		<a href="">	<img src="img\logo_google_analytics.PNG"> 
 			<p class="heading">Advanced Google Analytics</p> </a>
 			<p class="text">Learn about advanced Google Analytics features including data collection, processing and configuration, and more complex analysis and marketing tools.</p>
 
-	<a href=""> <img style="margin-top: 80px;" class="arrow" src="C:\Users\user\Documents\HTML\images\right_arrow.PNG"></a>
+	<a href=""> <img style="margin-top: 80px;" class="arrow" src="img\right_arrow.PNG"></a>
 		</div>
 	</section>
 
 	<section class="grid_container3c">
 		<div class="grid_item3c"> 
-		<a href="">	<img src="C:\Users\user\Documents\HTML\images\logo_google_analytics.PNG">
+		<a href="">	<img src="img\logo_google_analytics.PNG">
 			<p class="heading">Google Analytics for Power Users</p> </a>
 			<p class="text">After you're familiar with the range of features Analytics offers, learn and practice actionable analyses to track business performance and identify areas for business improvement.</p>
-	<a href=""> <img class="arrow" src="C:\Users\user\Documents\HTML\images\right_arrow.PNG"></a>
+	<a href=""> <img class="arrow" src="img\right_arrow.PNG"></a>
 		</div>
 	</section>
 
 	<section class="grid_container3d">
 		<div class="grid_item3d"> 
-		<a href="">	<img src="C:\Users\user\Documents\HTML\images\logo_google_analytics.PNG">
+		<a href="">	<img src="img\logo_google_analytics.PNG">
 			<p class="heading">Getting Started With Google Analytics 360</p> </a>
 			<p class="text">Learn about powerful Google Analytics 360 features that are not available in the standard product, and gain insight into how you can benefit from integrations with BigQuery, Google Marketing Platform products, and Google Ad Manager.
 			</p>
-	<a href=""> <img style="margin-top: 3px;" class="arrow" src="C:\Users\user\Documents\HTML\images\right_arrow.PNG"></a>
+	<a href=""> <img style="margin-top: 3px;" class="arrow" src="img\right_arrow.PNG"></a>
 		</div>
 	</section>
 
 	<section class="grid_container3e">
 		<div class="grid_item3e"> 
-		<a href="">	<img src="C:\Users\user\Documents\HTML\images\logo_gmp_data_studio_192px.PNG">
+		<a href="">	<img src="img\logo_gmp_data_studio_192px.PNG">
 			<p class="heading">Introduction to Data Studio</p> </a>
 			<p class="text">Introduction to Data Studio helps you learn and practice beginner steps in connecting your data and building Data Studio reports.</p>
-	<a href=""> <img style="margin-top: 90px" class="arrow" src="C:\Users\user\Documents\HTML\images\right_arrow.PNG"></a>
+	<a href=""> <img style="margin-top: 90px" class="arrow" src="img\right_arrow.PNG"></a>
 		</div>
 	</section>
 
 	<section class="grid_container3f">
 		<div class="grid_item3f"> 
-		<a href="">	<img src="C:\Users\user\Documents\HTML\images\logo_gmp_tag_manager_192px.PNG">
+		<a href="">	<img src="img\logo_gmp_tag_manager_192px.PNG">
 			<p class="heading">Google Tag Manager Fundamentals</p> </a>
 			<p class="text">Discover how Google Tag Manager can simplify the tag implementation and management process for marketers, analysts, and developers.</p>
 
-	<a href=""> <img style="margin-top: 60px" class="arrow" src="C:\Users\user\Documents\HTML\images\right_arrow.PNG"></a>
+	<a href=""> <img style="margin-top: 60px" class="arrow" src="img\right_arrow.PNG"></a>
 		</div>
 	</section> 
 
@@ -357,7 +352,7 @@
 
 	<section class="grid_container4"> 
 		<div class="grid_item4">
-			<img src="C:\Users\user\Documents\HTML\images\ins_justin_cutroni_1x.JPG">
+			<img src="img\ins_justin_cutroni_1x.JPG">
 		</div>
 
 		<div class="text">  
@@ -368,7 +363,7 @@
 
 	<section class="grid_container5">
 		<div class="grid_item5">
-			<img src="C:\Users\user\Documents\HTML\images\ins_krista_seiden_1x.JPG">
+			<img src="img\ins_krista_seiden_1x.JPG">
 		</div>
 
 		<div class="text">
@@ -379,7 +374,7 @@
 
 	<section class="grid_container6">
 		<div class="grid_item6">
-			<img src="C:\Users\user\Documents\HTML\images\ins_ashish_vij_1x.JPG">
+			<img src="img\ins_ashish_vij_1x.JPG">
 		</div>
 
 		<div class="text">
@@ -395,45 +390,45 @@
 		</div>
 
 		<div class="grid_item7"> <a href="">
-			<img style="height: 35%; width: 20%;" src="C:\Users\user\Documents\HTML\images\logo_google_analytics_for_firebase_1-icon_light.PNG"> <br>	Getting Started with Google Analytics for Firebase </a>
+			<img style="height: 35%; width: 20%;" src="img\logo_google_analytics_for_firebase_1-icon_light.PNG"> <br>	Getting Started with Google Analytics for Firebase </a>
 		</div>
 	
 		<div class="grid_item7"> <a href="">
-			<img style="height: 35%; width: 20%;" src="C:\Users\user\Documents\HTML\images\logo_gmp_tag_manager_192px.PNG"> <br>	Getting Started with Google Tag Manager </a>
+			<img style="height: 35%; width: 20%;" src="img\logo_gmp_tag_manager_192px.PNG"> <br>	Getting Started with Google Tag Manager </a>
 		</div>
 
 		<div class="grid_item7"> <a href="">
-			<img style="height: 35%; width: 20%;" src="C:\Users\user\Documents\HTML\images\logo_gmp_optimize_tile_192px.PNG"> <br>	Getting Started with Google Optimize </a>
+			<img style="height: 35%; width: 20%;" src="img\logo_gmp_optimize_tile_192px.PNG"> <br>	Getting Started with Google Optimize </a>
 		</div>
 
 		<div class="grid_item7"> <a href="">
-			<img style="height: 35%; width: 20%;" src="C:\Users\user\Documents\HTML\images\logo_google_analytics.PNG"> <br>	More Google Analytics Playlist  </a>
+			<img style="height: 35%; width: 20%;" src="img\logo_google_analytics.PNG"> <br>	More Google Analytics Playlist  </a>
 		</div>
 	</section>
 
 	<section class="grid_container8">
 		<div class="grid_item8">
-			<p style="font-size:20px; font-height:20px; font-weight:400; color:rgba(0, 0, 0, 0.87); padding:20px 0px 20px 120px; "> ADDITIONAL RESOURCES </p> <hr>
+			<p style="font-size:20px; font-weight:400; color:rgba(0, 0, 0, 0.87); padding:20px 0px 20px 120px; "> ADDITIONAL RESOURCES </p> <hr>
 		</div>
 
 		<div class="grid_item8"> <a href="">
-			<img style="height: %; width:%;" src="C:\Users\user\Documents\HTML\images\logo_analytics_color_1x_web_48dp.PNG"> <br>	Google Analytics <br> Demo Account  </a>
+			<img src="img\logo_analytics_color_1x_web_48dp.PNG"> <br>	Google Analytics <br> Demo Account  </a>
 		</div>
 
 		<div class="grid_item8"> <a href="">
-			<img style="height: %; width:%;" src="C:\Users\user\Documents\HTML\images\logo_analytics_color_1x_web_48dp.PNG"> <br>	Google Analytics <br> Youtube Channel  </a>
+			<img  src="img\logo_analytics_color_1x_web_48dp.PNG"> <br>	Google Analytics <br> Youtube Channel  </a>
 		</div>
 	
 		<div class="grid_item8"> <a href="">
-			<img style="height: %; width: %;" src="C:\Users\user\Documents\HTML\images\logo_googleg_standard_color_48dp_1x.PNG"> <br>	Google Analytics <br> Youtube Channel </a>
+			<img  src="img\logo_googleg_standard_color_48dp_1x.PNG"> <br>	Google Analytics <br> Youtube Channel </a>
 		</div>
 
 		<div class="grid_item8"> <a href="">
-			<img style="height: %; width: %;" src="C:\Users\user\Documents\HTML\images\logo_youtube_color_1x_web_48dp.PNG"> <br>	 Google Analytics <br> Blog </a>
+			<img  src="img\logo_youtube_color_1x_web_48dp.PNG"> <br>	 Google Analytics <br> Blog </a>
 		</div>
 
 		<div class="grid_item8"> <a href="">
-			<img style="height: %; width:%;" src="C:\Users\user\Documents\HTML\images\logo_google_developers_color_1x_web_48dp.PNG"> <br>	 Google Analytics <br> Google Developer  </a>
+			<img  src="img\logo_google_developers_color_1x_web_48dp.PNG"> <br>	 Google Analytics <br> Google Developer  </a>
 		</div>
 
 	</section>
